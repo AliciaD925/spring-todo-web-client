@@ -18,13 +18,13 @@ class TodoList extends Component<any, TodoListState> {
     }
 
     async componentDidMount() {
-       await this.loadPage();
+        await this.loadPage();
     }
 
     loadPage = async () => {
-    let todos = await getTodos();
-    this.setState({todos, loading: false});
-}
+        let todos = await getTodos();
+        this.setState({todos, loading: false});
+    }
 
     render() {
         return (
@@ -32,7 +32,7 @@ class TodoList extends Component<any, TodoListState> {
                 <h2>This is a todo list</h2>
                 {this.state.loading ? (
                     <>
-                     <h2>this is loading</h2>
+                        <h2>this is loading</h2>
                     </>
                 ) : (
                     <>
