@@ -20,7 +20,6 @@ class TodoItem extends Component<TodoProp, TodoState> {
         this.state = {
             modalVisible: false,
             updateModalVisible: false,
-
         }
     }
 
