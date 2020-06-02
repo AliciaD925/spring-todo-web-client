@@ -1,3 +1,4 @@
+
 import React, {Component} from 'react';
 import {Card, Checkbox, Col, Button, Modal} from 'antd';
 import Todo from "../services/Todo";
@@ -9,6 +10,10 @@ interface TodoProp {
     todo: Todo;
     reload(): void;
 }
+interface TodoState {
+    modalVisible: boolean;
+}
+
 
 interface TodoState {
     modalVisible: boolean;
@@ -40,7 +45,7 @@ class TodoItem extends Component<TodoProp, TodoState> {
         this.setState({
             updateModalVisible: true
         })
-    }
+
     handleCancel = () => {
         this.setState({
             modalVisible: false,
