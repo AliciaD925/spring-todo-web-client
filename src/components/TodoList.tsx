@@ -39,7 +39,7 @@ class TodoList extends Component<any, TodoListState> {
                         <TodoForm reload={this.loadPage}/>
                         <Row className={styles.todoRows}>
                             {this.state.todos.map((todo: Todo) =>
-                                <TodoItem key={todo.id} todo={todo}/>
+                                <TodoItem key={todo.id} todo={todo} reload={this.loadPage}/>
                             )}
                         </Row>
                     </>
