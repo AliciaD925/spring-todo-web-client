@@ -29,7 +29,7 @@ export const postTodo = async (todo: Todo) => {
 
 export const updateTodoById = async (todo: Todo) => {
     try{
-        let response = await axios.post(`${base_url}/${todo.id}`, todo);
+        let response = await axios.put(`${base_url}/${todo.id}`, todo);
         console.log("Response", response);
         console.log("Data", response.data);
         return response.data;
