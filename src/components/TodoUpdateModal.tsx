@@ -53,7 +53,6 @@ const TodoUpdateModal: React.FC<TodoUpdateModalProps> = ({visible, todo, onCance
             </Form>
         </Modal>
     );
-
 }
 
 export default TodoUpdateModal;
